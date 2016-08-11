@@ -13,6 +13,7 @@
 		3F307B8B1B584B680087207E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F307B8A1B584B680087207E /* Images.xcassets */; };
 		3F307B8E1B584B680087207E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F307B8C1B584B680087207E /* LaunchScreen.xib */; };
 		3F307B9A1B584B680087207E /* voltRelaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F307B991B584B680087207E /* voltRelaxTests.swift */; };
+		3F307BA61B584C280087207E /* relax.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F307BA51B584C280087207E /* relax.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3F307B931B584B680087207E /* voltRelaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voltRelaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F307B981B584B680087207E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F307B991B584B680087207E /* voltRelaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voltRelaxTests.swift; sourceTree = "<group>"; };
+		3F307BA51B584C280087207E /* relax.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relax.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				3F307B871B584B680087207E /* Main.storyboard */,
 				3F307B8A1B584B680087207E /* Images.xcassets */,
 				3F307B8C1B584B680087207E /* LaunchScreen.xib */,
+				3F307BA51B584C280087207E /* relax.mp3 */,
 				3F307B811B584B680087207E /* Supporting Files */,
 			);
 			path = voltRelax;
@@ -156,15 +159,18 @@
 		3F307B761B584B680087207E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "iD Student";
 				TargetAttributes = {
 					3F307B7D1B584B680087207E = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 6YUP5Q2DLS;
+						LastSwiftMigration = 0800;
 					};
 					3F307B921B584B680087207E = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 3F307B7D1B584B680087207E;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -195,6 +201,7 @@
 				3F307B891B584B680087207E /* Main.storyboard in Resources */,
 				3F307B8E1B584B680087207E /* LaunchScreen.xib in Resources */,
 				3F307B8B1B584B680087207E /* Images.xcassets in Resources */,
+				3F307BA61B584C280087207E /* relax.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +283,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -340,9 +348,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
 				INFOPLIST_FILE = voltRelax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IDPA.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -350,16 +362,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
 				INFOPLIST_FILE = voltRelax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IDPA.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		3F307BA11B584B680087207E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -370,23 +385,24 @@
 				);
 				INFOPLIST_FILE = voltRelaxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IDPA.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voltRelax.app/voltRelax";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		3F307BA21B584B680087207E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = voltRelaxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IDPA.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voltRelax.app/voltRelax";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -409,6 +425,7 @@
 				3F307B9F1B584B680087207E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F307BA01B584B680087207E /* Build configuration list for PBXNativeTarget "voltRelaxTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				3F307BA21B584B680087207E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
