@@ -14,6 +14,14 @@
 		3F307B8E1B584B680087207E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F307B8C1B584B680087207E /* LaunchScreen.xib */; };
 		3F307B9A1B584B680087207E /* voltRelaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F307B991B584B680087207E /* voltRelaxTests.swift */; };
 		3F307BA61B584C280087207E /* relax.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F307BA51B584C280087207E /* relax.mp3 */; };
+		7CC8B91A1D5CF1F800A15F46 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8B9181D5CF1F800A15F46 /* Interface.storyboard */; };
+		7CC8B91C1D5CF1F800A15F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8B91B1D5CF1F800A15F46 /* Assets.xcassets */; };
+		7CC8B9231D5CF1F800A15F46 /* Volt, Relax Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7CC8B9221D5CF1F800A15F46 /* Volt, Relax Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7CC8B9281D5CF1F800A15F46 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8B9271D5CF1F800A15F46 /* InterfaceController.swift */; };
+		7CC8B92A1D5CF1F800A15F46 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8B9291D5CF1F800A15F46 /* ExtensionDelegate.swift */; };
+		7CC8B92C1D5CF1F800A15F46 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8B92B1D5CF1F800A15F46 /* ComplicationController.swift */; };
+		7CC8B92E1D5CF1F800A15F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8B92D1D5CF1F800A15F46 /* Assets.xcassets */; };
+		7CC8B9321D5CF1F800A15F46 /* Volt, Relax Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7CC8B9161D5CF1F800A15F46 /* Volt, Relax Watch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,46 @@
 			remoteGlobalIDString = 3F307B7D1B584B680087207E;
 			remoteInfo = voltRelax;
 		};
+		7CC8B9241D5CF1F800A15F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F307B761B584B680087207E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC8B9211D5CF1F800A15F46;
+			remoteInfo = "Volt, Relax Watch Extension";
+		};
+		7CC8B9301D5CF1F800A15F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F307B761B584B680087207E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC8B9151D5CF1F800A15F46;
+			remoteInfo = "Volt, Relax Watch";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7CC8B9361D5CF1F800A15F46 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7CC8B9231D5CF1F800A15F46 /* Volt, Relax Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8B93A1D5CF1F800A15F46 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7CC8B9321D5CF1F800A15F46 /* Volt, Relax Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3F307B7E1B584B680087207E /* voltRelax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voltRelax.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +85,16 @@
 		3F307B981B584B680087207E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F307B991B584B680087207E /* voltRelaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voltRelaxTests.swift; sourceTree = "<group>"; };
 		3F307BA51B584C280087207E /* relax.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relax.mp3; sourceTree = "<group>"; };
+		7CC8B9161D5CF1F800A15F46 /* Volt, Relax Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volt, Relax Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC8B9191D5CF1F800A15F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7CC8B91B1D5CF1F800A15F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CC8B91D1D5CF1F800A15F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC8B9221D5CF1F800A15F46 /* Volt, Relax Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Volt, Relax Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC8B9271D5CF1F800A15F46 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7CC8B9291D5CF1F800A15F46 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7CC8B92B1D5CF1F800A15F46 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7CC8B92D1D5CF1F800A15F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CC8B92F1D5CF1F800A15F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +112,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7CC8B91F1D5CF1F800A15F46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +127,8 @@
 			children = (
 				3F307B801B584B680087207E /* voltRelax */,
 				3F307B961B584B680087207E /* voltRelaxTests */,
+				7CC8B9171D5CF1F800A15F46 /* Volt, Relax Watch */,
+				7CC8B9261D5CF1F800A15F46 /* Volt, Relax Watch Extension */,
 				3F307B7F1B584B680087207E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +138,8 @@
 			children = (
 				3F307B7E1B584B680087207E /* voltRelax.app */,
 				3F307B931B584B680087207E /* voltRelaxTests.xctest */,
+				7CC8B9161D5CF1F800A15F46 /* Volt, Relax Watch.app */,
+				7CC8B9221D5CF1F800A15F46 /* Volt, Relax Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +183,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7CC8B9171D5CF1F800A15F46 /* Volt, Relax Watch */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8B9181D5CF1F800A15F46 /* Interface.storyboard */,
+				7CC8B91B1D5CF1F800A15F46 /* Assets.xcassets */,
+				7CC8B91D1D5CF1F800A15F46 /* Info.plist */,
+			);
+			path = "Volt, Relax Watch";
+			sourceTree = "<group>";
+		};
+		7CC8B9261D5CF1F800A15F46 /* Volt, Relax Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8B9271D5CF1F800A15F46 /* InterfaceController.swift */,
+				7CC8B9291D5CF1F800A15F46 /* ExtensionDelegate.swift */,
+				7CC8B92B1D5CF1F800A15F46 /* ComplicationController.swift */,
+				7CC8B92D1D5CF1F800A15F46 /* Assets.xcassets */,
+				7CC8B92F1D5CF1F800A15F46 /* Info.plist */,
+			);
+			path = "Volt, Relax Watch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +215,12 @@
 				3F307B7A1B584B680087207E /* Sources */,
 				3F307B7B1B584B680087207E /* Frameworks */,
 				3F307B7C1B584B680087207E /* Resources */,
+				7CC8B93A1D5CF1F800A15F46 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7CC8B9311D5CF1F800A15F46 /* PBXTargetDependency */,
 			);
 			name = voltRelax;
 			productName = voltRelax;
@@ -153,13 +245,47 @@
 			productReference = 3F307B931B584B680087207E /* voltRelaxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7CC8B9151D5CF1F800A15F46 /* Volt, Relax Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC8B9371D5CF1F800A15F46 /* Build configuration list for PBXNativeTarget "Volt, Relax Watch" */;
+			buildPhases = (
+				7CC8B9141D5CF1F800A15F46 /* Resources */,
+				7CC8B9361D5CF1F800A15F46 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CC8B9251D5CF1F800A15F46 /* PBXTargetDependency */,
+			);
+			name = "Volt, Relax Watch";
+			productName = "Volt, Relax Watch";
+			productReference = 7CC8B9161D5CF1F800A15F46 /* Volt, Relax Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7CC8B9211D5CF1F800A15F46 /* Volt, Relax Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC8B9331D5CF1F800A15F46 /* Build configuration list for PBXNativeTarget "Volt, Relax Watch Extension" */;
+			buildPhases = (
+				7CC8B91E1D5CF1F800A15F46 /* Sources */,
+				7CC8B91F1D5CF1F800A15F46 /* Frameworks */,
+				7CC8B9201D5CF1F800A15F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Volt, Relax Watch Extension";
+			productName = "Volt, Relax Watch Extension";
+			productReference = 7CC8B9221D5CF1F800A15F46 /* Volt, Relax Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3F307B761B584B680087207E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "iD Student";
 				TargetAttributes = {
@@ -171,6 +297,16 @@
 					3F307B921B584B680087207E = {
 						CreatedOnToolsVersion = 6.4;
 						LastSwiftMigration = 0800;
+					};
+					7CC8B9151D5CF1F800A15F46 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6YUP5Q2DLS;
+						ProvisioningStyle = Automatic;
+					};
+					7CC8B9211D5CF1F800A15F46 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6YUP5Q2DLS;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -189,6 +325,8 @@
 			targets = (
 				3F307B7D1B584B680087207E /* voltRelax */,
 				3F307B921B584B680087207E /* voltRelaxTests */,
+				7CC8B9151D5CF1F800A15F46 /* Volt, Relax Watch */,
+				7CC8B9211D5CF1F800A15F46 /* Volt, Relax Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +350,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7CC8B9141D5CF1F800A15F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8B91C1D5CF1F800A15F46 /* Assets.xcassets in Resources */,
+				7CC8B91A1D5CF1F800A15F46 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8B9201D5CF1F800A15F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8B92E1D5CF1F800A15F46 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -232,6 +387,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7CC8B91E1D5CF1F800A15F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8B92A1D5CF1F800A15F46 /* ExtensionDelegate.swift in Sources */,
+				7CC8B9281D5CF1F800A15F46 /* InterfaceController.swift in Sources */,
+				7CC8B92C1D5CF1F800A15F46 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -239,6 +404,16 @@
 			isa = PBXTargetDependency;
 			target = 3F307B7D1B584B680087207E /* voltRelax */;
 			targetProxy = 3F307B941B584B680087207E /* PBXContainerItemProxy */;
+		};
+		7CC8B9251D5CF1F800A15F46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CC8B9211D5CF1F800A15F46 /* Volt, Relax Watch Extension */;
+			targetProxy = 7CC8B9241D5CF1F800A15F46 /* PBXContainerItemProxy */;
+		};
+		7CC8B9311D5CF1F800A15F46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CC8B9151D5CF1F800A15F46 /* Volt, Relax Watch */;
+			targetProxy = 7CC8B9301D5CF1F800A15F46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -257,6 +432,14 @@
 				3F307B8D1B584B680087207E /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		7CC8B9181D5CF1F800A15F46 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC8B9191D5CF1F800A15F46 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,6 +589,98 @@
 			};
 			name = Release;
 		};
+		7CC8B9341D5CF1F800A15F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
+				INFOPLIST_FILE = "Volt, Relax Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.revoltapplications.voltrelax.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		7CC8B9351D5CF1F800A15F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
+				INFOPLIST_FILE = "Volt, Relax Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.revoltapplications.voltrelax.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		7CC8B9381D5CF1F800A15F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
+				IBSC_MODULE = Volt__Relax_Watch_Extension;
+				INFOPLIST_FILE = "Volt, Relax Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.revoltapplications.voltrelax.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		7CC8B9391D5CF1F800A15F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
+				IBSC_MODULE = Volt__Relax_Watch_Extension;
+				INFOPLIST_FILE = "Volt, Relax Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.revoltapplications.voltrelax.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +710,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		7CC8B9331D5CF1F800A15F46 /* Build configuration list for PBXNativeTarget "Volt, Relax Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC8B9341D5CF1F800A15F46 /* Debug */,
+				7CC8B9351D5CF1F800A15F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CC8B9371D5CF1F800A15F46 /* Build configuration list for PBXNativeTarget "Volt, Relax Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC8B9381D5CF1F800A15F46 /* Debug */,
+				7CC8B9391D5CF1F800A15F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
